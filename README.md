@@ -5,3 +5,6 @@
 
 *DAY-2:
     Added Chi-Square test for categorical and found it's limitations
+
+*DAY-3:
+    implement PSI + Chi-square ( hybrid ) for categorical data.

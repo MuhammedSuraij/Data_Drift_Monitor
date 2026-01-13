@@ -1,5 +1,5 @@
 from input_loader import load_csv
-from draft_statistical import is_numeric, ks_drift,chi_square_drift
+from drift_statistical import is_numeric, ks_drift,categorical_drift
 from baseline import compute_baseline, save_baseline
 
 train_df = load_csv("data/train.csv")
@@ -13,8 +13,8 @@ for col in train_df.columns:
         drifted,p=ks_drift(train_df[col],new_df[col])
         method="KS Test"
     else:
-        drifted,p=chi_square_drift(train_df[col],new_df[col])
-        method="Chi-Square"
+        drifted,psi,p=categorical_drift(train_df[col],new_df[col])
+        method="PSI + Chi-Square"
 
     print(f"{col} | {method} | Drift= {drifted} | p-value= {p:.4f}")
 
