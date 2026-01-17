@@ -11,3 +11,6 @@
 
 *DAY-4:
     Added global drift, drift injector, system health and recommended action finder.
+
+*DAY-5:
+    Implement minimal stream data using kafka

@@ -1,20 +1,27 @@
 DATA DRIFT MONITOR REPORT
-Generated at : 2026-01-14 19:37:29.810247
+Generated at : 2026-01-17 15:43:56.233499
 
 Feature: age
 Method: KS Test
 Severity: LOW
-Reason : {'mean_change_%': np.float64(0.0), 'std_change_%': np.float64(0.0), 'old_range': (np.int64(22), np.int64(40)), 'new_change': (np.int64(22), np.int64(40))}
+Reason:
+- Mean changed by 0.00%
+- Standard deviation changed by 0.00%
+- Value range shifted from [22 - 40] to [22 - 40]
 
 Feature: amount
 Method: KS Test
 Severity: HIGH
-Reason : {'mean_change_%': np.float64(170.97), 'std_change_%': np.float64(50.0), 'old_range': (np.int64(200), np.int64(300)), 'new_change': (np.float64(600.0), np.float64(750.0))}
+Reason:
+- Mean changed by 170.97%
+- Standard deviation changed by 50.00%
+- Value range shifted from [200 - 300] to [600.0 - 750.0]
 
 Feature: category
 Method: PSI + Chi-Square
 Severity: HIGH
-New Categories : ['fraud', 'b']
+Reason:
+- New unseen categories detected: fraud, b
 
 GLOBAL DRIFT SCORE: 3.43
 SYSTEM HEALTH: CRITICAL
