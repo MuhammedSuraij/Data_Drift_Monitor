@@ -1,9 +1,9 @@
-from input_loader import load_data
-from drift_statistical import is_numeric, ks_drift, categorical_drift
-from baseline import compute_baseline, save_baseline
-from global_drift import comput_global_drift
-from drift_injector import inject_category_drift, inject_numeric_drift
-from common_engine import (
+from src.input_loader import load_data
+from src.drift_statistical import is_numeric, ks_drift, categorical_drift
+from src.baseline import compute_baseline, save_baseline
+from src.global_drift import comput_global_drift
+from src.drift_injector import inject_category_drift, inject_numeric_drift
+from src.common_engine import (
     numeric_severity,
     psi_severity,
     numeric_drift_reason,

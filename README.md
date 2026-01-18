@@ -1,16 +1,16 @@
 # Data_Drift_Monitor
 
-*DAY-1:
+*1:
     Detects statistical drift in tabular dataset using KS Test
 
-*DAY-2:
+*2:
     Added Chi-Square test for categorical and found it's limitations
 
-*DAY-3:
+*3:
     implement PSI + Chi-square ( hybrid ) for categorical data.
 
-*DAY-4:
+*4:
     Added global drift, drift injector, system health and recommended action finder.
 
-*DAY-5:
+*5:
     Implement minimal stream data using kafka

@@ -1,0 +1,10 @@
+cd D:\kafka
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+
+cd D:\kafka
+bin\windows\kafka-server-start.bat config\server.properties
+
+
+python -m src.kafka.consumer
+python -m src.kafka.producer

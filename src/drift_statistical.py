@@ -1,7 +1,7 @@
 from scipy.stats import ks_2samp,chi2_contingency
 import pandas as pd
 import numpy as np
-from psi import calculate_psi
+from src.psi import calculate_psi
 
 
 def is_numeric(series):

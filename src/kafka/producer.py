@@ -10,7 +10,9 @@ producer = KafkaProducer(
 
 print("Kafka Producer started...")
 
-while True:
+rnum=0
+while rnum!=60:
+    rnum=rnum+1
     record = {
         "age": random.randint(18, 60),
         "amount": random.randint(100, 1000),
