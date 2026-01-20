@@ -1,27 +1,29 @@
 DATA DRIFT MONITOR REPORT
-Generated at : 2026-01-17 15:43:56.233499
+Generated at : 2026-01-20 18:37:55.100292
 
 Feature: age
 Method: KS Test
 Severity: LOW
 Reason:
-- Mean changed by 0.00%
-- Standard deviation changed by 0.00%
-- Value range shifted from [22 - 40] to [22 - 40]
+- Mean changed by 0.0%
+- Std changed by 0.0%
+- Range: (22.0, 40.0) → (22.0, 40.0)
+- Pattern: MINOR FLUCTUATION
 
 Feature: amount
 Method: KS Test
 Severity: HIGH
 Reason:
-- Mean changed by 170.97%
-- Standard deviation changed by 50.00%
-- Value range shifted from [200 - 300] to [600.0 - 750.0]
+- Mean changed by 80.65%
+- Std changed by 0.0%
+- Range: (200.0, 300.0) → (400.0, 500.0)
+- Pattern: DATA SHIFT
 
 Feature: category
 Method: PSI + Chi-Square
 Severity: HIGH
 Reason:
-- New unseen categories detected: fraud, b
+- New unseen categories: b, a
 
 GLOBAL DRIFT SCORE: 3.43
 SYSTEM HEALTH: CRITICAL

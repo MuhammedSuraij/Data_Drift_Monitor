@@ -1,4 +1,3 @@
-
 def comput_global_drift(feature_scores, feature_weights):
     total = 0
     weight_sum = 0

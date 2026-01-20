@@ -14,3 +14,9 @@
 
 *5:
     Implement minimal stream data using kafka
+
+*6:
+    Implement basics of fastapi
+
+*7:
+    Added plots based on drift.

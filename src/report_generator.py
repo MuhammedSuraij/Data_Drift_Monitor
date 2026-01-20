@@ -2,7 +2,7 @@ from datetime import datetime
 
 
 def write_report(results, global_drift, health, action, output_path):
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write("DATA DRIFT MONITOR REPORT\n")
         f.write(f"Generated at : {datetime.now()}\n\n")
 
